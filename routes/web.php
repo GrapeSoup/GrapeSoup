@@ -23,3 +23,5 @@ Route::namespace('User')->middleware(['auth'])->prefix('user')->group(function (
 	Route::get('profile', 'ProfileController@index')->name('user.profile');
 	Route::post('profile', 'ProfileController@update')->name('user.profile');
 });
+
+Route::post('/user/post', 'PostController@storePost')->name('post');

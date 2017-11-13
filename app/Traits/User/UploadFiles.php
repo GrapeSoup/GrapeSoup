@@ -6,7 +6,7 @@ namespace App\Traits\User;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
 
-class UploadFiles
+trait UploadFiles
 {
     /**
      * @param        $file
